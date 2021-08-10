@@ -32,3 +32,20 @@ body {
     width: 90%;
     margin: 20px auto;
 }
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.5rem;
+}
+.scores {
+    display: inline-block;
+    padding: 20px;
+}
+#user-score{
+    font-weight: bold;
+    color: #d2d4d6;
+}
+#comp-score{
+    font-weight: bold;
+    color: #d2d4d6;
+}
