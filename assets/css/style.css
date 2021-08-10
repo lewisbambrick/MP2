@@ -13,3 +13,18 @@ body {
     text-align: center;
     font-size: 3rem;
 }
+
+/* --------- Game layout */
+
+.game-area {
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    background-color: #9e9e9e;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    border-radius: 5%;
+}
