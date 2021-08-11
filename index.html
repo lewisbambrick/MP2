@@ -44,17 +44,17 @@
             <p class="scores">Computers score: <span id="comp-score">0</span></p>
         </div>
     </section>
-    <section class="game-button-Flex">
-        <button class="gameButton rules" onclick="showRules()" id="modal-button">Rules</button>
-    </section>
-    <section id="rules-modal" class="modal">
-        <div class="rules-content">
-            <section id="rulesImg">
-                <img src="assets/images/rulesImg.jpeg" alt="An image which demonstrates how the game is won or lost">
-            </section>
-            <span class="close-button" onclick="hideRules()" id="closeModal">&times;</span>
-        </div>
-    </section>
+    <button id="rules-button" data-modal-target="#modal">Rules</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Rules</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        <img id="rules" src="assets/images/rulesImg.jpeg" alt="an image that describes the rules of the game.">
+    </div>
+  </div>
+  <div id="overlay"></div>
 
     <script src="assets/js/script.js"></script>
 </body>
