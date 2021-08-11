@@ -38,11 +38,24 @@
             <button data-type="submit" class="btn btn--submit">play</button>
         </div>
     </section>
+    <section>   
         <div class="score-area">
             <p class="scores">Your score <span id="user-score">0</span></p>
             <p class="scores">Computers score: <span id="comp-score">0</span></p>
         </div>
-    
+    </section>
+    <section class="game-button-Flex">
+        <button class="gameButton rules" onclick="showRules()" id="modal-button">Rules</button>
+    </section>
+    <section id="rules-modal" class="modal">
+        <div class="rules-content">
+            <section id="rulesImg">
+                <img src="assets/images/rulesImg.jpeg" alt="An image which demonstrates how the game is won or lost">
+            </section>
+            <span class="close-button" onclick="hideRules()" id="closeModal">&times;</span>
+        </div>
+    </section>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
