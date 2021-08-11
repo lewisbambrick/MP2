@@ -1,58 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font awesome and google font links-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a30bacff23.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>RPSLS</title>
 </head>
+
 <body>
     <h1 class="heading">Rock, paper, scissors, lizard, spock</h1>
 
-    <section>
-    <div class="game-area">
+    <!--Buttons that collects what the user chose-->
+    <section id="container2">
         <div class="controls-area">
-            <button data-selection="rock" class="btn btn--big btn--rock">
-                <i class="fas fa-hand-rock"></i>
-            </button>
-            <button data-selection="paper" class="btn btn--big btn--paper">
-                <i class="fas fa-hand-paper"></i>
-            </button>
-            <button data-selection="scissors" class="btn btn--big btn--scissors">
-                <i class="fas fa-hand-scissors"></i>
-            </button>
-            <button data-selection="lizard" class="btn btn--big btn--lizard">
-                <i class="fas fa-hand-lizard"></i>
-            </button>
-            <button data-selection="spock" class="btn btn--big btn--spock">
-                <i class="fas fa-hand-spock"></i>
-            </button>
+        <button onclick="decideWinner('Paper')" class="paper-btn btn--big iconButton"><i class="fas fa-hand-paper"></i></button>
+        <button onclick="decideWinner('Lizard')" class="lizard-btn btn--big iconButton"><i
+                class="fas fa-hand-lizard"></i></button>
+        <button onclick="decideWinner('Rock')" class="rock-btn btn--big iconButton"><i class="fas fa-hand-rock"></i></button>
+        <button onclick="decideWinner('Spock')" class="spock-btn btn--big iconButton"><i class="fas fa-hand-spock"></i></button>
+        <button onclick="decideWinner('Scissors')" class="scissor-btn btn--big iconButton"><i
+                class="fas fa-hand-scissors"></i></button>
+        </div>
+    </section>
 
-        </div>
+    <section id="scores">
+        <p>Your Score: <span id="score"> 0</span></p>
+        <p>Computer Score: <span id="loss"> 0</span></p>
     </section>
-    <section>   
-        <div class="score-area">
-            <p class="scores">Your score: <span id="user-score">0</span></p>
-            <p class="scores">Computers score: <span id="comp-score">0</span></p>
-        </div>
-    </section>
+
     <button id="rules-button" data-modal-target="#modal">Rules</button>
-  <div class="modal" id="modal">
-    <div class="modal-header">
-      <div class="title">Rules</div>
-      <button data-close-button class="close-button">&times;</button>
-    </div>
-    <div class="modal-body">
-        <img id="rules" src="assets/images/rulesImg.jpeg" alt="an image that describes the rules of the game.">
-    </div>
-  </div>
-  <div id="overlay"></div>
+ <div class="modal" id="modal">
+   <div class="modal-header">
+     <div class="title">Rules</div>
+     <button data-close-button class="close-button">&times;</button>
+   </div>
+   <div class="modal-body">
+       <img id="rules" src="assets/images/rulesImg.jpeg" alt="an image that describes the rules of the game.">
+   </div>
+ </div>
+ <div id="overlay"></div>
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
