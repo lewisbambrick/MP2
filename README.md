@@ -2,7 +2,7 @@
 
 [View the live project here.](https://lewisbambrick.github.io/MP2/)
 
-Mockup
+![mockup](docs/smartmockup.jpg)
 
 ## About the Game.
 
@@ -34,9 +34,14 @@ Mockup
     This website is made to be smooth, clear and easy to navigate. It is adapted for all types of devices so that it will always be smooth and user-friendly. The User will be very satisfied with the interaction and simplicity that the game provides.
 
 #### Wireframes
-    1.PC model-Link here
-    2.tablet model-Link here
-    3.phone model-link here
+![wireframepc](docs/wireframepc.png)
+![screenshotpc](docs/screenshotpc.png)
+
+![wireframetablet](docs/wireframetablet.png)
+![screenshottablet](docs/screenshottablet.png)
+
+![wireframemobile](docs/wireframemobile.png)
+![screenshotmobile](docs/screenshotmobile.png)
 
 #### Fonts
     The Fonts I have chosen for my site are:
